@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-200: #b3cde0; /* Azul claro */
+    --blue-500: #007bb5; /* Azul médio */
+    --blue-800: #003d66; /* Azul escuro */
+    --black-800: #171717; /* Preto */
+    --gray-200: #e0e0e0; /* Cinza claro */
+    --gray-400: #8c8c8c; /* Cinza médio */
+    --gray-600: #4f4f4f; /* Cinza escuro */
+    --white: #ffffff; /* Branco */
+    --blue-100: #007bff; /* Cor de fundo */
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--gray-200);
+    color: var(--black-800);
+    font-size: 16px;
+}
+
+/* Estilização seção header */
+
+.menu_container {
+    background-color: #007bff; /* Cor de fundo */
+    position: sticky;
+    top: 0;
+    filter: opacity(0.9);
+    height: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra na parte inferior */
+    z-index: 100; /* Define a prioridade da sobreposição */
+}
+
+.menu_container a {
+    font-size: 16px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.menu_container a:hover {
+    color: var(--blue-200);
+}
+
+.menu_content {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_lista {
+    list-style: none;
+    display: flex;
+}
+
+.menu_lista li {
+    margin: 0 0 0 16px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main */
+
+/* Estilizando sessão home */
+
+#home {
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    gap: 40px; /* Espaçamento entre os artigos */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dentro do contêiner de texto */
+}
+
+#home_texto {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    max-width: 50%; /* Define uma largura máxima para o texto */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5; /* Reduz a opacidade para 50% */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#home_imagem img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o limite do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    animation: fadeInOut 4s infinite; /* Aplica a animação */
+}
+
+#home_texto h1, #home_texto h4, #home_texto p {
+    margin-bottom: 20px; /* Aumenta o espaço entre os elementos de texto */
+}
+
+#home_texto p {
+    margin-bottom: 30px; /* Aumenta o espaço entre os elementos de texto */
+}
+
+.botao {
+    padding: 12px 32px;
+    border: 1px solid var(--blue-100);
+    color: var(--blue-100);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra na parte inferior */
+    transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+    color: var(--white);
+    background-color: #007bff; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa na parte inferior */
+}
+
+/* Estilizando sessão about */
+
+.img_perfil {
+    width: 950px;
+    height: 950px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center; /* Centraliza a parte visível da imagem */
+    border: 2px solid var(--blue-100) !important; /* Borda ao redor da imagem */
+}
+
+#about {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    padding: 250px;
+    text-align: center; /* Centraliza o texto */
+}
+
+#about img {
+    width: 240px; /* Define a largura da imagem */
+    height: 250px; /* Define a altura igual à largura para manter a proporção */
+    border-radius: 100%; /* Torna a imagem circular */
+    border: 5px solid var(--blue-100); /* Borda arredondada ao redor da imagem */
+}
+
+#botao_git {
+    padding: 12px 32px;
+    border: 1px solid var(--blue-100);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blue-100) !important;
+    background-color: var(--white);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais intensa na parte inferior */
+
+}
+
+#botao_git:hover {
+    color: var(--white) !important;
+    background-color: var(--blue-100);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa na parte inferior */
+}
+
+#sobre_texto {
+    text-align: center; /* Centraliza o texto dentro do artigo */
+    color: var(--black-800);
+}
+
+#sobre_texto h1, #sobre_texto p {
+    margin-bottom: 25px; /* Espaço inferior */
+}
+
+#sobre_github {
+    display: flex; /* Exibe itens em linha horizontal */
+    justify-content: center; /* Alinha itens horizontalmente no centro */
+    align-items: center; /* Alinha itens verticalmente no centro */
+    gap: 20px; /* Espaçamento entre o botão e o texto */
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+#sobre_github a {
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    text-decoration: none; /* Remova o sublinhado do link */
+    color: var(--blue-800); /* Cor do texto do link */
+    display: inline-flex; /* Permite ajustes no alinhamento interno */
+    align-items: center; /* Alinha o conteúdo interno verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo interno horizontalmente no centro */
+}
+
+#sobre_github p {
+    margin: 0; /* Remove margens que possam afetar o alinhamento */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
