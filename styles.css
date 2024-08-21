@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+    
 :root {
     --blue-200: #b3cde0; /* Azul claro */
     --blue-500: #007bb5; /* Azul médio */
@@ -312,3 +312,80 @@ footer {
     box-sizing: border-box;
     margin-top: 5px;
 }
+
+/* Estilização do Secess.html */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  #header_content_sucess {
+    display: grid;
+    background-color: var(--blue-100);
+    filter: opacity(0.9);
+    grid-template-columns: 1fr; /* Ajustado para uma coluna flexível */
+    padding: 30px;
+    align-items: center;
+  }
+  
+  #menu_content_sucess a {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  #home_sucess {
+    display: grid; 
+    grid-template-rows: repeat(auto-fill, minmax(480px, 1fr)); 
+    background-color: var(--gray-200);
+  }
+  
+  #home_texto_sucess {
+    display: grid;
+    place-items: center; /* Centraliza tanto horizontal quanto verticalmente */
+  }
+  
+  #home_texto_sucess h1 {
+    color: var(--blue-800);
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 28px;
+  }
+  
+  #home_texto_sucess h4 {
+    color: black;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-size: 18px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  #home_texto_sucess svg {
+    vertical-align: middle;
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 3px;
+    right: 10px;
+    animation: blink 1s infinite; /* Faz o ícone piscar */
+  }
