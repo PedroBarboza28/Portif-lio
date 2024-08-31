@@ -18,6 +18,8 @@
     <link rel="icon" href="./img/icons8.png" />
     <link rel="stylesheet" href="styles.css">
     <title>Estúdio Virtual</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             <div id="menu" class="flex">
 
                 <!-- Menu da Página (nav) -->
-                <nav>
+                <nav class="menu_desktop">
                     <!-- Marcadores não ordenados -->
                     <ul class="menu_lista">
                         <li><a href="#">Home</a></li>
@@ -49,7 +51,22 @@
                     </ul>
                 </nav>
 
+                <div class="menu_mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <nav>
+                        <!-- Marcadores não ordenados -->
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#contact">Contate-me</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+
+        </div>
         </div>
 
     </header>
@@ -84,7 +101,7 @@
 
         <!-- Seção Sobre você -->
         <section id="about">
-        
+
         </section>
 
         <section id="contact" class="contato_container">

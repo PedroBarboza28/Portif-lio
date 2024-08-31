@@ -5,17 +5,26 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-    
+
 :root {
-    --blue-200: #b3cde0; /* Azul claro */
-    --blue-500: #007bb5; /* Azul médio */
-    --blue-800: #003d66; /* Azul escuro */
-    --black-800: #171717; /* Preto */
-    --gray-200: #e0e0e0; /* Cinza claro */
-    --gray-400: #8c8c8c; /* Cinza médio */
-    --gray-600: #4f4f4f; /* Cinza escuro */
-    --white: #ffffff; /* Branco */
-    --blue-100: #007bff; /* Cor de fundo */
+    --blue-200: #b3cde0;
+    /* Azul claro */
+    --blue-500: #007bb5;
+    /* Azul médio */
+    --blue-800: #003d66;
+    /* Azul escuro */
+    --black-800: #171717;
+    /* Preto */
+    --gray-200: #e0e0e0;
+    /* Cinza claro */
+    --gray-400: #8c8c8c;
+    /* Cinza médio */
+    --gray-600: #4f4f4f;
+    /* Cinza escuro */
+    --white: #ffffff;
+    /* Branco */
+    --blue-100: #007bff;
+    /* Cor de fundo */
 
 }
 
@@ -32,13 +41,16 @@ body {
 /* Estilização seção header */
 
 .menu_container {
-    background-color: #007bff; /* Cor de fundo */
+    background-color: #007bff;
+    /* Cor de fundo */
     position: sticky;
     top: 0;
     filter: opacity(0.9);
     height: 80px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra na parte inferior */
-    z-index: 100; /* Define a prioridade da sobreposição */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Sombra na parte inferior */
+    z-index: 100;
+    /* Define a prioridade da sobreposição */
 }
 
 .menu_container a {
@@ -75,6 +87,10 @@ body {
     align-items: center;
 }
 
+.menu_mobile{
+    display: none;
+}
+
 /* main */
 
 /* Estilizando sessão home */
@@ -83,45 +99,61 @@ body {
     display: flex;
     position: relative;
     top: 50px;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    gap: 40px; /* Espaçamento entre os artigos */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    gap: 40px;
+    /* Espaçamento entre os artigos */
     padding: 20px;
-    text-align: center; /* Centraliza o texto dentro do contêiner de texto */
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner de texto */
 }
 
 #home_texto {
-    flex: 1; /* Permite que o texto ocupe o espaço disponível */
-    max-width: 50%; /* Define uma largura máxima para o texto */
+    flex: 1;
+    /* Permite que o texto ocupe o espaço disponível */
+    max-width: 50%;
+    /* Define uma largura máxima para o texto */
 }
 
 @keyframes fadeInOut {
     0% {
         opacity: 1;
     }
+
     50% {
-        opacity: 0.5; /* Reduz a opacidade para 50% */
+        opacity: 0.5;
+        /* Reduz a opacidade para 50% */
     }
+
     100% {
         opacity: 1;
     }
 }
 
 #home_imagem img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse o limite do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    animation: fadeInOut 4s infinite; /* Aplica a animação */
+    max-width: 100%;
+    /* Garante que a imagem não ultrapasse o limite do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    animation: fadeInOut 4s infinite;
+    /* Aplica a animação */
 }
 
-#home_texto h1, #home_texto h4, #home_texto p {
-    margin-bottom: 20px; /* Aumenta o espaço entre os elementos de texto */
+#home_texto h1,
+#home_texto h4,
+#home_texto p {
+    margin-bottom: 20px;
+    /* Aumenta o espaço entre os elementos de texto */
 }
 
 #home_texto p {
-    margin-bottom: 30px; /* Aumenta o espaço entre os elementos de texto */
+    margin-bottom: 30px;
+    /* Aumenta o espaço entre os elementos de texto */
 }
 
-#home_texto h1{
+#home_texto h1 {
     font-size: x-large;
     color: var(--blue-100);
 }
@@ -134,14 +166,17 @@ body {
     text-align: center;
     font-weight: 700;
     background-color: var(--gray-200);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra na parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra na parte inferior */
     transition: all 0.3s ease-in-out;
 }
 
 .botao:hover {
     color: var(--white);
-    background-color: #007bff; /* Cor de fundo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa na parte inferior */
+    background-color: #007bff;
+    /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra mais intensa na parte inferior */
 }
 
 /* Estilizando sessão about */
@@ -151,27 +186,37 @@ body {
     height: 950px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center; /* Centraliza a parte visível da imagem */
-    border: 2px solid var(--blue-100) !important; /* Borda ao redor da imagem */
+    object-position: center;
+    /* Centraliza a parte visível da imagem */
+    border: 2px solid var(--blue-100) !important;
+    /* Borda ao redor da imagem */
 }
 
 #about {
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    align-items: center;
+    /* Centraliza verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre a imagem e o texto */
     padding: 250px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     position: relative;
     top: 90px;
 }
 
 #about img {
-    width: 240px; /* Define a largura da imagem */
-    height: 250px; /* Define a altura igual à largura para manter a proporção */
-    border-radius: 100%; /* Torna a imagem circular */
-    border: 5px solid var(--blue-100); /* Borda arredondada ao redor da imagem */
-    position:relative;
+    width: 240px;
+    /* Define a largura da imagem */
+    height: 250px;
+    /* Define a altura igual à largura para manter a proporção */
+    border-radius: 100%;
+    /* Torna a imagem circular */
+    border: 5px solid var(--blue-100);
+    /* Borda arredondada ao redor da imagem */
+    position: relative;
     bottom: 35px;
 }
 
@@ -184,53 +229,72 @@ body {
     color: var(--blue-100) !important;
     background-color: var(--gray-200);
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais intensa na parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais intensa na parte inferior */
 
 }
 
 #botao_git:hover {
     color: var(--white) !important;
     background-color: var(--blue-100);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa na parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra mais intensa na parte inferior */
 }
 
 #sobre_texto {
-    text-align: center; /* Centraliza o texto dentro do artigo */
+    text-align: center;
+    /* Centraliza o texto dentro do artigo */
     color: var(--black-800);
     position: relative;
     bottom: 35px;
 }
 
-#sobre_texto h1, #sobre_texto p {
-    margin-bottom: 25px; /* Espaço inferior */
+#sobre_texto h1,
+#sobre_texto p {
+    margin-bottom: 25px;
+    /* Espaço inferior */
 }
 
-#sobre_texto h1{
-    font-size:x-large;
+#sobre_texto h1 {
+    font-size: x-large;
     color: var(--blue-100);
 }
 
 #sobre_github {
-    display: flex; /* Exibe itens em linha horizontal */
-    justify-content: center; /* Alinha itens horizontalmente no centro */
-    align-items: center; /* Alinha itens verticalmente no centro */
-    gap: 20px; /* Espaçamento entre o botão e o texto */
-    margin-top: 20px; /* Ajuste conforme necessário */
+    display: flex;
+    /* Exibe itens em linha horizontal */
+    justify-content: center;
+    /* Alinha itens horizontalmente no centro */
+    align-items: center;
+    /* Alinha itens verticalmente no centro */
+    gap: 20px;
+    /* Espaçamento entre o botão e o texto */
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
 }
 
 #sobre_github a {
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    text-decoration: none; /* Remova o sublinhado do link */
-    color: var(--blue-800); /* Cor do texto do link */
-    display: inline-flex; /* Permite ajustes no alinhamento interno */
-    align-items: center; /* Alinha o conteúdo interno verticalmente no centro */
-    justify-content: center; /* Alinha o conteúdo interno horizontalmente no centro */
+    font-size: 16px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 10px 20px;
+    /* Ajuste o padding conforme necessário */
+    text-decoration: none;
+    /* Remova o sublinhado do link */
+    color: var(--blue-800);
+    /* Cor do texto do link */
+    display: inline-flex;
+    /* Permite ajustes no alinhamento interno */
+    align-items: center;
+    /* Alinha o conteúdo interno verticalmente no centro */
+    justify-content: center;
+    /* Alinha o conteúdo interno horizontalmente no centro */
 }
 
 #sobre_github p {
-    margin: 0; /* Remove margens que possam afetar o alinhamento */
-    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 0;
+    /* Remove margens que possam afetar o alinhamento */
+    font-size: 16px;
+    /* Ajuste o tamanho da fonte conforme necessário */
 }
 
 .contato_container {
@@ -243,62 +307,57 @@ body {
     gap: 30px;
 }
 
-.contanto_content{
+.contanto_content {
     gap: 30px;
     flex-direction: column;
     margin: 64px 0px 0px 0px;
     font-size: 20px;
-    position:relative;
+    position: relative;
     bottom: 5px;
 }
 
-h4{
+h4 {
     font-size: 30px;
     font-weight: bold;
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO REDES SOCIAIS */
 
-.social_container a img{
-     width: 70px;
+.social_container a img {
+    width: 70px;
 }
 
 .social_icon:hover {
-   filter:  
-   brightness(0) 
-   saturate(100%) 
-   invert(65%) 
-   sepia(51%) 
-   saturate(4176%) 
-   hue-rotate(189deg) 
-   brightness(94%) 
-   contrast(86%)
+    filter:
+        brightness(0) saturate(100%) invert(65%) sepia(51%) saturate(4176%) hue-rotate(189deg) brightness(94%) contrast(86%)
 }
 
 /* ESTILIZAÇÃO DA SEÇÃO FORMULÁRIO */
 
-form{
-   display: flex; 
-   flex-direction: column;
-   margin: 70px 0px 0px 0px;
-   padding: 24px;
-   position: relative;
-   bottom: 5px;
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px 0px 0px;
+    padding: 24px;
+    position: relative;
+    bottom: 5px;
 }
 
 
-form label{
+form label {
     font-size: 20px;
 }
 
-form input, textarea{
+form input,
+textarea {
     margin: 8px 0 16px;
     padding: 8px;
     border-radius: 14px;
     border: none;
     font-weight: bold;
 }
-form button{
+
+form button {
     background-color: transparent;
 }
 
@@ -321,65 +380,69 @@ footer {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-  }
-  
-  #header_content_sucess {
+}
+
+#header_content_sucess {
     display: grid;
     background-color: var(--blue-100);
     filter: opacity(0.9);
-    grid-template-columns: 1fr; /* Ajustado para uma coluna flexível */
+    grid-template-columns: 1fr;
+    /* Ajustado para uma coluna flexível */
     padding: 30px;
     align-items: center;
-  }
-  
-  #menu_content_sucess a {
+}
+
+#menu_content_sucess a {
     color: var(--white);
     font-size: 22px;
     font-weight: bold;
     font-family: 'Comic Sans MS', cursive;
-  }
-  
-  #home_sucess {
-    display: grid; 
-    grid-template-rows: repeat(auto-fill, minmax(480px, 1fr)); 
-    background-color: var(--gray-200);
-  }
-  
-  #home_texto_sucess {
+}
+
+#home_sucess {
     display: grid;
-    place-items: center; /* Centraliza tanto horizontal quanto verticalmente */
-  }
-  
-  #home_texto_sucess h1 {
+    grid-template-rows: repeat(auto-fill, minmax(480px, 1fr));
+    background-color: var(--gray-200);
+}
+
+#home_texto_sucess {
+    display: grid;
+    place-items: center;
+    /* Centraliza tanto horizontal quanto verticalmente */
+}
+
+#home_texto_sucess h1 {
     color: var(--blue-800);
     text-align: center;
     position: relative;
     top: 100px;
     font-size: 28px;
-  }
-  
-  #home_texto_sucess h4 {
+}
+
+#home_texto_sucess h4 {
     color: black;
     text-align: center;
     position: relative;
     bottom: 100px;
     font-size: 18px;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
+}
 
-  #home_texto_sucess svg {
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#home_texto_sucess svg {
     vertical-align: middle;
     margin-left: 8px;
     width: 24px;
@@ -387,5 +450,76 @@ footer {
     position: relative;
     bottom: 3px;
     right: 10px;
-    animation: blink 1s infinite; /* Faz o ícone piscar */
-  }
+    animation: blink 1s infinite;
+    /* Faz o ícone piscar */
+}
+
+@media screen and (max-width: 1030px) {
+
+    /*CABEÇALHO*/
+    .menu_desktop {
+        display: none;
+    }
+
+    /*ESTILO DO MENU MOBILE*/
+    .menu_mobile{
+        display: flex; /* Define o layout flexível */
+        flex-direction: column; /* Alinha os itens verticalmente */
+        background-color: var(--white); /* Cor de fundo, ajuste conforme necessário */
+        padding: 20px; /* Espaçamento interno */
+        position: absolute; /* Posiciona o menu sobre o conteúdo */
+        top: 0; /* Alinha o menu ao topo da tela */
+        right: 0; /* Alinha o menu à direita da tela */
+        width: 50%; /* Ajusta a largura do menu para a tela inteira */
+        height: 100vh; /* Ajusta a altura do menu para a altura total da tela */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1000; /* Garante que o menu fique sobre outros elemento*/
+    }
+
+    /*MENU LISTA*/
+
+
+    li{
+        list-style-type: none; /* Remove os marcadores dos itens da lista */
+        color: black;
+        background-color: #007bff;
+        margin-inline: 0px;
+        margin-top: 0px;
+    }
+
+    /*HOME TEXTO*/
+    #home,
+    h4,
+    h1,
+    p {
+        margin: 0;
+        /* Remove margens para evitar espaçamentos desnecessários */
+        padding: 0;
+        /* Remove paddings para evitar espaçamentos desnecessários */
+        box-sizing: border-box;
+    }
+
+
+    #home_imagem {
+        width: 80%;
+    }
+
+    /*CLASSE GERAL*/
+
+    #home {
+        flex-direction: column-reverse;
+        margin-top: 0.5em;
+        width: 100%;
+        margin: 0;
+    }
+
+    /*SOBRE MIM*/
+
+    #about {
+        flex-direction: column;
+        margin-top: 10px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+}
