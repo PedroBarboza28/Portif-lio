@@ -479,6 +479,10 @@ footer {
         z-index: 1000; /* Garante que o menu fique sobre outros elemento*/
     }
 
+.flex menu_container{
+width:100%;
+}
+
     /*MENU LISTA*/
 
 
