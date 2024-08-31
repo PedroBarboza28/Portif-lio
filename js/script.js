@@ -61,6 +61,7 @@ async function getApiGithub(){
     }
 }
 
+
 // Função de validação do formulário
 formulario.addEventListener('submit', function(event) {
   
