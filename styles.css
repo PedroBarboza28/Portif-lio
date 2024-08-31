@@ -470,7 +470,6 @@ footer {
         position: absolute; /* Posiciona o menu sobre o conteúdo */
         top: 0; /* Alinha o menu ao topo da tela */
         right: 0; /* Alinha o menu à direita da tela */
-        width: 50%; /* Ajusta a largura do menu para a tela inteira */
         height: 100vh; /* Ajusta a altura do menu para a altura total da tela */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
         z-index: 1000; /* Garante que o menu fique sobre outros elemento*/
