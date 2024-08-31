@@ -527,6 +527,7 @@ footer {
         flex-direction: column;
         margin-top: 10px;
         font-weight: 400;
+        width:100%;
         margin: 0;
     }
 
