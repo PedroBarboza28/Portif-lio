@@ -479,6 +479,15 @@ footer {
     /*MENU LISTA*/
 
 
+.menu_content {
+    max-width: 1120px;
+    padding: 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
     li{
         list-style-type: none; /* Remove os marcadores dos itens da lista */
         color: black;
