@@ -492,14 +492,6 @@ footer {
     align-items: center;
 }
 
-    li{
-        list-style-type: none; /* Remove os marcadores dos itens da lista */
-        color: black;
-        background-color: #007bff;
-        margin-inline: 0px;
-        margin-top: 0px;
-    }
-
     /*HOME TEXTO*/
     #home,
     h4,
