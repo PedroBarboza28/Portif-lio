@@ -465,6 +465,7 @@ footer {
     .menu_mobile{
         display: flex; /* Define o layout flexível */
         flex-direction: column; /* Alinha os itens verticalmente */
+        width:100%;
         background-color: var(--white); /* Cor de fundo, ajuste conforme necessário */
         padding: 20px; /* Espaçamento interno */
         position: absolute; /* Posiciona o menu sobre o conteúdo */
