@@ -463,6 +463,9 @@ footer {
 
     /*ESTILO DO MENU MOBILE*/
     .menu_mobile{
+
+        align-items:center;
+
         display: flex; /* Define o layout flexível */
         flex-direction: column; /* Alinha os itens verticalmente */
         width:100%;
