@@ -466,26 +466,10 @@ footer {
     box-sizing: border-box;
 }
 
-.menu_container {
-    background-color: #007bff;
-    max-width: 800px;
-    filter: opacity(0.9);
-    height: 80px;
-    padding-left: 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    z-index: 100;
-    width:100%;
-    
-}
-
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-html {
-    scroll-behavior: none;
 }
 
     /*MENU LISTA*/
