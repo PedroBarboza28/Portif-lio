@@ -464,40 +464,10 @@ footer {
 
     /*MENU LISTA*/
 
-
-.menu_content {
-    max-width: 1120px;
-    padding: 0 24px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-    /*HOME TEXTO*/
-    #home,
-    h4,
-    h1,
-    p {
-        margin: 0;
-        /* Remove margens para evitar espaçamentos desnecessários */
-        padding: 0;
-        /* Remove paddings para evitar espaçamentos desnecessários */
-        box-sizing: border-box;
-    }
-
-
-    #home_imagem {
-        width: 80%;
-    }
-
     /*CLASSE GERAL*/
 
     #home {
         flex-direction: column-reverse;
-        margin-top: 0.5em;
-        width: 100%;
-        margin: 0;
     }
 
     /*SOBRE MIM*/
@@ -506,12 +476,4 @@ footer {
         flex-direction: column;
  
     }
-
-footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 }
