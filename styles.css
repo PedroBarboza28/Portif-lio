@@ -457,9 +457,6 @@ footer {
 @media screen and (max-width: 600px) {
 
     /*CABEÇALHO*/
-    .menu_desktop {
-        display: none;
-    }
 
 * {
     box-sizing: border-box;
