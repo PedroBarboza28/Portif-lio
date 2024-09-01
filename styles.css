@@ -461,24 +461,6 @@ footer {
         display: none;
     }
 
-    /*ESTILO DO MENU MOBILE*/
-    .menu_mobile{
-
-        align-items:center;
-
-        display: flex; /* Define o layout flexível */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        width:100%;
-        background-color: var(--white); /* Cor de fundo, ajuste conforme necessário */
-        padding: 20px; /* Espaçamento interno */
-        position: absolute; /* Posiciona o menu sobre o conteúdo */
-        top: 0; /* Alinha o menu ao topo da tela */
-        right: 0; /* Alinha o menu à direita da tela */
-        height: 100vh; /* Ajusta a altura do menu para a altura total da tela */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-        z-index: 1000; /* Garante que o menu fique sobre outros elemento*/
-    }
-
 
     /*MENU LISTA*/
 
