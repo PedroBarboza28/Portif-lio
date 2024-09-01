@@ -470,6 +470,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+
+.menu_container{
+   justify-content: space-between
 }
 
     /*MENU LISTA*/
