@@ -460,15 +460,11 @@ footer {
 
 .menu_container {
     background-color: #007bff;
-    /* Cor de fundo */
-    position: sticky;
-    top: 0;
     filter: opacity(0.9);
     height: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    /* Sombra na parte inferior */
     z-index: 100;
-    /* Define a prioridade da sobreposição */
+    
 }
 
 .flex {
@@ -478,12 +474,7 @@ footer {
 }
 
 html {
-    scroll-behavior: smooth;
-}
-
-
-* {
-    box-sizing: border-box;
+    scroll-behavior: none;
 }
 
     /*MENU LISTA*/
