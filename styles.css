@@ -462,6 +462,7 @@ footer {
     background-color: #007bff;
     filter: opacity(0.9);
     height: 80px;
+    padding-left: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     z-index: 100;
     
