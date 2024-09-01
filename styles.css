@@ -468,14 +468,11 @@ footer {
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
    
 }
 
-.menu_container{
-   justify-content: space-between
-}
 
     /*MENU LISTA*/
 
