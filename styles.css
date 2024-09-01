@@ -458,6 +458,14 @@ footer {
 
     /*CABEÇALHO*/
 
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
 .menu_container {
     background-color: #007bff;
     max-width: 800px;
