@@ -471,6 +471,12 @@ footer {
     /* Define a prioridade da sobreposição */
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 * {
     box-sizing: border-box;
